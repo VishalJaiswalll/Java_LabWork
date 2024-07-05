@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+        body {
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+            line-height: 22px;
+            color: #222;
+        }
+        .main {
+            width: 1170px;
+            margin: 100px auto;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        .section-title h2 {
+            text-transform: capitalize;
+            font-size: 35px;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 20px;
+            margin-bottom: 10px;
+        }
+        .section-title h2:before {
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background-color: #00875c;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .menus {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .menu-column {
+            width: 31%;
+        }
+        .menu-column h4 {
+            text-transform: capitalize;
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        .menu-column h4:before {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background-color: #db9717;
+            bottom: 0;
+        }
+        .single-menu {
+            display: flex;
+            align-items: center;
+            margin-top: 40px;
+        }
+        .single-menu img {
+            width: 300px;
+            height: 110px;
+            border-radius: 50%;
+            max-width: 110px;
+            border: 1px dashed #ddd;
+            padding: 3px;
+            margin-right: 15px;
+            transition: .3s;
+        }
+        .single-menu:hover img {
+            transform: rotate(360deg);
+        }
+        .single-menu .menu-content h5 {
+            text-transform: capitalize;
+            font-size: 22px;
+            font-weight: 500;
+            border-bottom: 1px dashed #222;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        .single-menu .menu-content h5 span {
+            color: tomato;
+            float: right;
+            font-weight: 600;
+            font-style: italic;
+        }
+        .video-section {
+            margin-top: 50px;
+        }
+        .video-section h4 {
+            text-transform: capitalize;
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        .video-section h4:before {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background-color: #db9717;
+            bottom: 0;
+        }
+        .video-section video {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="section-title">
+            <h2>our menu</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, eum!</p>
+        </div>
+        <div class="menus">
+            <div class="menu-column">
+                <h4>breakfast</h4>
+                <div class="single-menu">
+                    <img src="assets/img/dish1.jpeg" alt="">
+                    <div class="menu-content">
+                        <h5>food title <span>$50</span></h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="assets/img/dish2.jpeg" alt="">
+                    <div class="menu-content">
+                        <h5>food title <span>$50</span></h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="assets/img/dish3.jpeg" alt="">
+                    <div class="menu-content">
+                        <h5>food title <span>$50</span></h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="video-section">
+                    <h4>Breakfast Videos</h4>
+                    <video controls>
+                        <source src="assets/video/video1.mp4"  type="video/mp4">
+                    </video>
+                    <video controls>
+                        <source src="assets/video/video2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="menu-column">
+                <h4>lunch</h4>
+                <div class="single-menu">
+                    <img src="assets/img/dish4.jpeg" alt="">
+                    <div class="menu-content">
+                        <h5>food title <span>$50</span></h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="assets/img/dish5.jpeg" alt="">
+                    <div class="menu-content">
+                        <h5>food title <span>$50</span></h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="assets/img/dish6.jpeg" alt="">
+                    <div class="menu-content">
+                        <h5>food title <span>$50</span></h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="video-section">
+                    <h4>Lunch Videos</h4>
+                    <video controls>
+                        <source src="assets/video/video3.mp4" type="video/mp4">
+                    </video>
+                    <video controls>
+                        <source src="assets/video/video4.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="menu-column">
+                <h4>dinner</h4>
+                <div class="single-menu">
+                    <img src="assets/img/dish7.jpeg" alt="">
+                    <div class="menu-content">
+                        <h5>food title <span>$50</span></h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="assets/img/dish8.jpeg" alt="">
+                    <div class="menu-content">
+                        <h5>food title <span>$50</span></h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="assets/img/dish9.jpeg" alt="">
+                    <div class="menu-content">
+                        <h5>food title <span>$50</span></h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="video-section">
+                    <h4>Dinner Videos</h4>
+                    <video controls>
+                        <source src="assets/video/video5.mp4" type="video/mp4">
+                    </video>
+                    <video controls>
+                        <source src="assets/video/video6.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
